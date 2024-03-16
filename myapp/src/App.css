@@ -1,0 +1,75 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.start-button,
+.draw-button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deck {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  margin-top: -5px; /* Adjust the overlap */
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.card:not(:last-child) {
+  margin-top: -145px; /* Increase overlap for cards other than the top card */
+}
+
+.leaderboard{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background:linear-gradient(to right, blue, coral);
+  width: 30%;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.leaderboardElem{
+  display: flex;
+  gap: 1rem;
+  
+  color: white;
+  padding: 1rem;
+}
+
+.username{
+  flex: 2;
+  text-align: center;
+  border-bottom: solid lightcoral;
+  padding-bottom: 0.25rem;
+}
+
+.games{
+  
+}
